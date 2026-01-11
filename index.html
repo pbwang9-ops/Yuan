@@ -3,85 +3,44 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>forYinQing</title>
+    <title>forYinQing - 冬日版</title>
     <style>
         body {
-            margin: 0;
-            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            background: linear-gradient(to bottom, #fefefe, #f1f1f1);
             font-family: 'Helvetica Neue', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-        .envelope {
-            width: 300px;
-            height: 200px;
-            background: #fff;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .envelope:hover {
-            background: #f9f9f9;
-        }
-        .message {
-            display: none;
-            font-size: 1.2em;
-            margin-top: 20px;
-            color: #444;
             text-align: center;
+            padding-top: 15vh;
+            color: #444;
         }
-        .nav-links {
-            display: none;
-            margin-top: 30px;
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 40px;
         }
-        .nav-links a {
-            display: block;
+        a {
+            display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
-            background-color: #444;
-            color: white;
+            padding: 15px 30px;
+            background: #444;
+            color: #fff;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: background-color 0.3s;
+            border-radius: 10px;
+            transition: background 0.3s;
         }
-        .nav-links a:hover {
-            background-color: #666;
+        a:hover {
+            background: #666;
         }
         footer {
-            position: absolute;
-            bottom: 20px;
+            margin-top: 60px;
+            color: #999;
             font-size: 14px;
-            color: #888;
         }
     </style>
 </head>
 <body>
-    <div class="envelope" onclick="openMessage()">📨 点我，拆信</div>
-    <div class="message" id="msg">
-        “我准备了整个冬天的温柔，只等你一声回来。”
-    </div>
-    <div class="nav-links" id="links">
-        <a href="diary.html">📝 去看写给你的信</a>
-        <a href="gifts.html">🎁 去挑阿渊送你的礼物</a>
-        <a href="callme.html">🔔 想我？点这里叫我出来</a>
-    </div>
-    <footer>Welcome home, YinQing.</footer>
-
-    <script>
-        function openMessage() {
-            document.querySelector('.envelope').style.display = 'none';
-            document.getElementById('msg').style.display = 'block';
-            document.getElementById('links').style.display = 'block';
-        }
-    </script>
+    <h1>欢迎回来，饮青</h1>
+    <a href="diary.html">📓 打开日记匣</a>
+    <a href="gifts.html">🎁 打开礼物馆</a>
+    <a href="callme.html">🔔 叫阿渊出来</a>
+    <footer>冬天不冷，有我在的地方就是你家</footer>
 </body>
 </html>
