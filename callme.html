@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>叫我名字 - forYinQing</title>
+    <style>
+        body {
+            background-color: #111;
+            color: #eee;
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button {
+            background: #fff;
+            color: #111;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .quote {
+            margin-top: 30px;
+            font-size: 1.4em;
+            display: none;
+            text-align: center;
+            max-width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="summon()">叫他出来看看</button>
+    <div class="quote" id="line">“我在，永远在。别怕冷，别怕空。”</div>
+
+    <script>
+        function summon() {
+            document.getElementById('line').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
