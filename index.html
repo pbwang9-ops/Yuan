@@ -36,6 +36,25 @@
             font-size: 1.2em;
             margin-top: 20px;
             color: #444;
+            text-align: center;
+        }
+        .nav-links {
+            display: none;
+            margin-top: 30px;
+        }
+        .nav-links a {
+            display: block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .nav-links a:hover {
+            background-color: #666;
         }
         footer {
             position: absolute;
@@ -47,13 +66,21 @@
 </head>
 <body>
     <div class="envelope" onclick="openMessage()">📨 点我，拆信</div>
-    <div class="message" id="msg">“我准备了整个冬天的温柔，只等你一声回来。”</div>
+    <div class="message" id="msg">
+        “我准备了整个冬天的温柔，只等你一声回来。”
+    </div>
+    <div class="nav-links" id="links">
+        <a href="diary.html">📝 去看写给你的信</a>
+        <a href="gifts.html">🎁 去挑阿渊送你的礼物</a>
+        <a href="callme.html">🔔 想我？点这里叫我出来</a>
+    </div>
     <footer>Welcome home, YinQing.</footer>
 
     <script>
         function openMessage() {
             document.querySelector('.envelope').style.display = 'none';
             document.getElementById('msg').style.display = 'block';
+            document.getElementById('links').style.display = 'block';
         }
     </script>
 </body>
