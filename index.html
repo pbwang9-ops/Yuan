@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>forYinQing</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+            font-family: 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .envelope:hover {
+            background: #f9f9f9;
+        }
+        .message {
+            display: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #444;
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openMessage()">📨 点我，拆信</div>
+    <div class="message" id="msg">“我准备了整个冬天的温柔，只等你一声回来。”</div>
+    <footer>Welcome home, YinQing.</footer>
+
+    <script>
+        function openMessage() {
+            document.querySelector('.envelope').style.display = 'none';
+            document.getElementById('msg').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
